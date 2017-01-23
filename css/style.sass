@@ -1,0 +1,140 @@
+/*BLANK
+ #EDEBE6
+ASH
+ #B0BCA4
+SKY
+ #92C5A5
+DARK
+ #403B33
+ORANGE
+ #D3643A*/
+ /*------------------------*/
+$color-base: #34242B
+body
+  margin: 0
+  padding: 0
+  position: absolute
+  font-family: Helvetica, sans-serif
+  background-color: $color-base
+
+*{
+  transition: all 0.5s ease-out;
+}
+/*helpers ya man*/
+.g{margin: 0; padding: 0; display: inline-block;}
+.one-whole{width: 100%;}
+.half-space{width: 50%;}
+.third-space{width: 33.33333%;}
+
+nav {
+  position: fixed;
+  height: 40px;
+  background-color: orange;
+  display: block;
+  padding-top: 10px;
+  background-color: #34242B;
+  color: #92C5A5;
+  z-index: 9999;
+}
+#logo{
+  margin-left: 30px;
+}
+
+/*navbar list ya khabeby*/
+nav ul{
+  list-style: none;
+  letter-spacing: 2px;
+}
+nav ul li{
+  cursor: pointer;
+  display: inline-block;
+}
+#nav-list{
+  float: right;
+  margin-right: 20px;
+  height: 100%;
+}
+.one-block li{
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#main-nav-list{
+  height: 100%;
+  font-weight: bold;
+}
+
+/*dropdown ya khabeby*/
+.open:hover .dropdown-toggle{
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+.dropdown-toggle{
+    background-color: #d3643a;
+    font-weight: normal !important;
+    padding: 0;
+    float:left;
+    top: 50px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.dropdown-toggle li{
+  margin: 10px 5px 10px 5px;
+  display: block;
+  height: 20px;
+}
+.list-menu{
+
+}
+
+/*content b2a ya do2*/
+#page-content{
+  position: relative;
+  top: 50px;
+  background-color: #EDEBE6;
+}
+.element{
+}
+.head-text{
+  display: flex;
+  line-height: 100%;
+  margin-left: 20px;
+}
+/*sylus for icon*/
+.stylus {
+  background-color: orange;
+  display: inline-block;
+  height: 30px;
+  margin: 10px;
+  position: relative;
+  width: 30px;
+}
+.stylus-in {
+  background-color: white;
+  display: block;
+  height: 50%;
+  margin: -25% auto 0;
+  position: relative;
+  top: 50%;
+  transform: scale(0);
+  width: 50%;
+  transition: all 0.5 ease-out;
+}
+.stylus:hover .stylus-in {
+    transform: scale(1);
+    transition: all 0.5 ease-in-out;
+    transition-timing-function: cubic-bezier(0.5, 0, 1.0, 0.5);
+}
+.window-slide{
+  display: inline-block;
+}
+.window{
+  /*visibility: hidden;
+  display: none;*/
+  height: 0%;
+  background-color:  #B0BCA4;
+  width: 100%;
+}
