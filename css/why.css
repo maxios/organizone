@@ -27,7 +27,26 @@
   width: 20px;
   height: 20px;
 }
+@keyframes changecolor {
+  from {
+    color: white;
+  }
 
+  to {
+    color: red;
+  }
+}
+@keyframes changesize {
+  from {
+    width: 20px;
+    height: 20px;
+  }
+
+  to {
+    width: 25px;
+    height: 25px;
+  }
+}
 #landing1 span:hover{
   color: #00B4FF;
   animation-duration: 0.5s;
@@ -46,7 +65,7 @@
   color: white;
   font-size: 12px;
 }
-#landing3{background-color: white; margin-bottom: 250px;}
+#landing3{background-color: white; margin-bottom: 250px}
 #all{position: absolute;
     width: 100%;}
 .go-down, .go-up{
