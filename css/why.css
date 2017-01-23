@@ -1,0 +1,74 @@
+*{transition: all 0.5 cubic-bezier(0.5, 0, 1, 0.5)}
+.landing{
+  display: table;
+    height: 600px;
+    text-align: center;
+    top: 0;
+    vertical-align: middle;
+    width: 100%;
+    overflow: scroll;;
+}
+#landing1{
+  background-color: #515151;
+    height: 600px;
+    color: white;
+    padding: 0;
+}
+#landing1 span{
+  color: white;
+  font-family: 'Courgette', cursive;
+}
+#landing1 span::before{
+  content: '';
+  background-image: url('http://www.shunvmall.com/data/out/108/47512606-heart-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+#landing1 span:hover{
+  color: #00B4FF;
+  animation-duration: 0.5s;
+  animation-name: changecolor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#landing1 span:hover::before{
+  animation-duration: 0.5s;
+  animation-name: changesize;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#landing2{
+  background-color: #00B4FF;
+  color: white;
+  font-size: 12px;
+}
+#landing3{background-color: white; margin-bottom: 250px;}
+#all{position: absolute;
+    width: 100%;}
+.go-down, .go-up{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  border-radius: 50%;
+  background-color: white;
+}
+.go-down{bottom: 50px;}
+.go-up{top: 50px;}
+
+h1{
+  vertical-align: middle; display: table-cell;
+  padding-left: 30px;
+  padding-right: 30px;
+  user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        cursor: default;
+}
