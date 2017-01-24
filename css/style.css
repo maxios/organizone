@@ -116,7 +116,7 @@ nav {
     height: 35px;
     margin-top: 19px;
     overflow: hidden;
-    width: 150px;
+    width: 170px;
 }
 .logo_text {
     left: -40px;
@@ -124,11 +124,13 @@ nav {
     top: -149px;
     width: 230px;
 }
+#organizone{
+
+}
 /*navbar list ya khabeby*/
 nav ul{
   list-style: none;
   letter-spacing: 2px;
-  display: flex;
 }
 nav ul li{
   cursor: pointer;
@@ -151,13 +153,14 @@ nav ul li{
 #main-nav-list{
   height: 100%;
   font-weight: bold;
+  margin-top: 10px;
 }
 #main-nav-list > li{
   height: 100%;
   float:left;
   padding-left: 5px;
   padding-right: 5px;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'kalam', sans-serif;
 }
 
 /*dropdown ya khabeby*/
@@ -172,6 +175,7 @@ nav ul li{
     border-left: 1px solid #b3afa6;
     border-right: 1px solid #b3afa6;
     font-weight: normal !important;
+    min-width: 200px;
     padding: 0;
     float:left;
     top: 50px;
@@ -183,6 +187,24 @@ nav ul li{
   padding: 10px;
   display: block;
   height: 20px;
+  margin-left: 10px
+}
+
+.horz-line-floor-nav {
+  background-color: #6d6d6d;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    width: 10px;
+    position: absolute;
+}
+.horz-line-nav{
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #ded9d1;
+  border-right: 1px solid #ded9d1;
+  background-color: #403b33;
+
 }
 
 /*content b2a ya do2*/
@@ -327,6 +349,9 @@ footer::before{
 
 }
 .footer-logo{
+  max-width: 250px;
+  min-width: 100px;
+  position: absolute;
   width: 18%;
   position: fixed;
   background-color: transparent;

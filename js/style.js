@@ -48,6 +48,8 @@ $(document).ready(function(){
            $('footer').css('height', '200px');
          }else if (scrollTop > $(document).height()/2){
            $('footer').css('height', '30px');
+         }else if ($(document).height() == $(window).height()){
+           $('footer').css('height', '200px');
          }else{
              $('footer').css('height', '10px');
          };
@@ -71,35 +73,26 @@ $(document).ready(function(){
     });
     $('#main-nav-list a').click(function(){
       $('#top-line').css('background-color', '#00B4FF');
-
+      $('.horz-line-nav').css('background-color', '#00B4FF')
     });
   $('.drop-ul > a').hover(function(){
-      var width = $(this).outerWidth() + prevAllCalc(this);
-       $('.top-line').css('width', width);
-      var ul = $(this).parent().children().length
 
-       $('#top-line').css('width', ((100/ul)*($(this).index()+1) + '%'));
+      var height = (($(this).index())/$(this).parent().children('a').length) * 100;
+       $('.horz-line-nav').css('height', height + '%');
+      var ul = $(this).parent().children().length;
+
    }).mouseleave(function() {
-     $('.top-line').css('width', '100%');
+     $('.top-line-nav').css('width', '100%');
    });
 
 // titles
     $('.title-text').hover(function(){
-      var height = $(this).outerHeight() + $(this).prevAll('div').outerHeight();
+      var height = (($(this).index())/$(this).parent().children('.title-text').length) * 100;
+      console.log($(this).index());
+      console.log($(this).parent().children('.title-text').length);
+      console.log(height);
+        $('.horz-line').css('height', height + "%");
 
-      if ($(this).index() == 1){
-        $('.horz-line').css('height', '17%');
-      } else if ($(this).index() == 2) {
-        $('.horz-line').css('height', '33%');
-      }else if ($(this).index() == 3) {
-        $('.horz-line').css('height', '50%');
-      } else if ($(this).index() == 4) {
-        $('.horz-line').css('height', '66%');
-      } else if ($(this).index() == 5) {
-        $('.horz-line').css('height', '83%');
-      } else if ($(this).index() == 6) {
-        $('.horz-line').css('height', '100%');
-      }
    }).mouseleave(function() {
      $('.horz-line').css('height', '100%');
    });

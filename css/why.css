@@ -53,6 +53,7 @@
   animation-name: changecolor;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  text-shadow: 0 0 1px #acacac;
 }
 #landing1 span:hover::before{
   animation-duration: 0.5s;
