@@ -453,6 +453,28 @@ html {
     overflow-x: hidden;
 }
 
+@media screen and (max-width: 400px){
+  h1, h2, h3, h4, h5{
+    font-size: 18px !important;
+  }
+  p{
+    font-size: 13 !important;
+  }
+  .horz-line-nav{
+    height: 80%;
+  }
+  .bullit{
+    margin: 20px 0 0 0;
+  }
+  .bullit-line > p{
+    margin-left: 10px;
+    width: 80%;
+  }
+  .horz-line-floor{
+    height: 80%;
+  }
+}
+
 @media screen and (max-width: 870px){
 
 /*responsive nav*/
@@ -498,8 +520,10 @@ html {
   }
 
   /*responsive services*/
+
   .container{
     display: block;
+    margin-left: 8px;
   }
   .titles-content{
       position: relative;
