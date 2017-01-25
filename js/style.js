@@ -52,7 +52,6 @@ var nav_color = '#403b33';
               'background-color': 'rgba(81, 81, 81, 0.8)',
               'color': 'white'
             });
-            $('.drop')
             $('.menu').css('border-color', 'white');
             $('.menu-icon').css('background-color', 'white');
 
@@ -112,10 +111,10 @@ var nav_color = '#403b33';
      $('#nav-list-responsive').css('display', 'none');
    });
 
-     $('.open').toggle(function(){
-        $(this).children('.dropdown-toggle').css('display', 'block')
+     $('.open > p').toggle(function(){
+        $(this).next('.dropdown-toggle').css('display', 'block')
      },function(){
-       $(this).children('.dropdown-toggle').css('display', 'none')
+       $(this).next('.dropdown-toggle').css('display', 'none')
      });
 // titles
     $('.title-text').hover(function(){

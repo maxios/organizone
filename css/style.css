@@ -473,6 +473,7 @@ html {
   .horz-line-floor{
     height: 80%;
   }
+  #logo{margin-left: 0}
 }
 
 @media screen and (max-width: 870px){
