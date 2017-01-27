@@ -20,42 +20,86 @@
     <div id=nav-content>
         <div id=logo class='g'>
           <img src='images/Organizone Logo.png' class=logo>
-
         </div>
         <div id="logo_text" class="g">
           <!-- <img src="images/Organizone Logo.png" class="logo_text"> -->
           <h1 id=organizone class=g>ORGANIZONE</h1>
         </div>
 
+        <!-- for responsive menu 870px -->
+        <div class=menu><div class=menu-icon></div></div>
         <div id=nav-list class="">
-          <ul id=main-nav-list class='g one-block'>
-            <li><div class='main nav-btn'><p><a href="index.html">Home</a></p></div></li>
-            <li><div class='main nav-btn'><a href='why_organizone.html'><p>Why Organizone?</p></a></div></li>
-            <li><div class='main nav-btn'><a href='about.html'><p>About</p></a></div></li>
-            <li><div class='main nav-btn'><a href='services.html'><p>Services</p></a></div></li>
+          <ul class='g main-nav-list one-block'>
+            <li><p><a href="index.html">Home</a></p></li>
+            <li><a href='why_organizone.html'><p>Why Organizone?</p></a></li>
+            <li><a href='about.html'><p>About</p></a></li>
+            <li><a href='services.html'><p>Services</p></a></li>
 
             <!-- open dropdown -->
             <li class='g open'>
-              <div class='main nav-btn'><p>Learning</p></div>
-              <div class='dropdown-toggle' data-toggle=dropdown>
+              <p>Learning</p>
+              <div class='dropdown-toggle'>
                   <ul class=drop-ul>
-                    <a href="#"><li>Books and Articles</li></a>
-                    <a href="#"><li>Videos</li></a>
+                      <div class="horz-line-floor-nav">
+                        <div class="horz-line-nav"></div>
+                      </div>
+                    <a href="learning/blog.html"><li>Books and Articles</li></a>
+                    <a href="learning/videos"><li>Videos</li></a>
                   </ul>
-                  <div class=top-line-floor><div class=top-line></div></div>
               </div>
             </li>
             <!-- End dropdown -->
 
             <!-- open dropdown -->
             <li class='g open'>
-              <div class='main nav-btn'><p>Career</p></div>
-              <div class='dropdown-toggle' data-toggle=dropdown>
+              <p>Career</p>
+              <div class='dropdown-toggle'>
                   <ul class='drop-ul'>
+                    <div class="horz-line-floor-nav">
+                      <div class="horz-line-nav"></div>
+                    </div>
                     <a href='career/join.html'><li>Join to crew</li></a>
                     <a href="career/internship.html"><li>Internships</li></a>
                   </ul>
-                  <div class=top-line-floor><div class=top-line></div></div>
+              </div>
+            </li>
+            <!-- End dropdown -->
+          </ul>
+          <!-- End the list -->
+        </div>
+        <div id=nav-list-responsive class="">
+          <ul class='g main-nav-list one-block'>
+            <li><p><a href="index.html">Home</a></p></li>
+            <li><a href='why_organizone.html'><p>Why Organizone?</p></a></li>
+            <li><a href='about.html'><p>About</p></a></li>
+            <li><a href='services.html'><p>Services</p></a></li>
+
+            <!-- open dropdown -->
+            <li class='g open'>
+              <p>Learning</p>
+              <div class='dropdown-toggle'>
+                  <ul class=drop-ul>
+                      <div class="horz-line-floor-nav">
+                        <div class="horz-line-nav"></div>
+                      </div>
+                    <a href="learning/blog.html"><li>Books and Articles</li></a>
+                    <a href="learning/videos"><li>Videos</li></a>
+                  </ul>
+              </div>
+            </li>
+            <!-- End dropdown -->
+
+            <!-- open dropdown -->
+            <li class='g open'>
+              <p>Career</p>
+              <div class='dropdown-toggle'>
+                  <ul class='drop-ul'>
+                    <div class="horz-line-floor-nav">
+                      <div class="horz-line-nav"></div>
+                    </div>
+                    <a href='career/join.html'><li>Join to crew</li></a>
+                    <a href="career/internship.html"><li>Internships</li></a>
+                  </ul>
               </div>
             </li>
             <!-- End dropdown -->
