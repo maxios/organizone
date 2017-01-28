@@ -1,5 +1,5 @@
 // functions
-function prevAllCalc(selector, prev_type, initial=0){
+function prevAllCalc(selector, prev_type, initial = 0){
   var width = initial ;
   $(selector).prevAll().each(function(){
     width += $(this).outerWidth();

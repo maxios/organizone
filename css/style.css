@@ -443,6 +443,7 @@ footer::before{
   width: 18%;
   position: fixed;
   background-color: transparent;
+    z-index: 4;
 }
 .footer-logo-width{
   width:100%;
@@ -662,7 +663,9 @@ ul.social-icons {
     border: 0;
   }
   .dropdown-toggle li{
-    margin: 0;
+      margin: 0;
+    padding-top: 15px;
+      padding-bottom: 15px;
     color: white;
 
   }
