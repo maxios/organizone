@@ -20,15 +20,13 @@ PURE SKY
 body{
   margin: 0;
   padding: 0;
-    overflow-x: scroll
 }
 p, h1, h2, h3, h4, h5{cursor: default;}
 nav p:hover{cursor: pointer}
 input{cursor: default;}
 /*
-*{
-  transition: all 0.3s ease-in-out;
-}
+
+
 */
 a {text-decoration: none; color:inherit;}
 a:hover {color: inherit;}
@@ -93,6 +91,7 @@ nav {
 }
 #nav-content{
   width: 100%;
+    z-index: 999;
 }
 
 #top-line-floor{
@@ -308,6 +307,7 @@ nav ul li{
   margin-top: 100px;
   display: flex;
     max-width: 1440px;
+    min-height: 1000px;
     width: 1440px;
     
 }
@@ -378,7 +378,7 @@ nav ul li{
   display: none;
   position: relative;
   left: 500px;
-  padding-bottom: 500px;
+  padding-bottom: 200px;
   transition: all 0.5s ease-out;
 }
 .titles-content.selected{
@@ -689,6 +689,8 @@ ul.social-icons {
   .container{
     display: block;
     margin-left: 8px;
+      width: 100%;
+      
   }
   .titles-content{
       position: relative;
