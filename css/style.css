@@ -87,6 +87,8 @@ nav {
     right: 0;
     position: absolute;
     margin-bottom: 40px;
+    margin-left:auto;
+    margin-right: auto;
     z-index: 99999;
     max-width: 1440px;
 }
@@ -361,16 +363,18 @@ nav ul li{
   display: inline-block;
   transition: color 0.3 ease-out;
 }
-.title-text:hover h1{
-  color: #00B4FF !important;
-  margin-left:10px !important;
-}
-.title-text:hover > .block-line{
-  width: 90%;
-}
-.title-text .selected{
-  color: #00B4FF;
-  margin-left: 10px;
+@media screen and (min-width: 870px){
+    .title-text:hover h1{
+      color: #00B4FF !important;
+      margin-left:10px !important;
+    }
+    .title-text:hover > .block-line{
+      width: 90%;
+    }
+    .title-text .selected{
+      color: #00B4FF;
+      margin-left: 10px;
+    }
 }
 
 /*titles content*/
