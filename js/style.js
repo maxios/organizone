@@ -1,5 +1,5 @@
 // functions
-function prevAllCalc(selector, prev_type, initial=0){
+function prevAllCalc(selector, prev_type, initial = 0){
   var width = initial ;
   $(selector).prevAll().each(function(){
     width += $(this).outerWidth();
@@ -51,6 +51,7 @@ $(document).ready(function(){
             $('nav').css({
               'position': 'fixed',
               'background-color': 'rgba(81, 81, 81, 0.95)',
+                'max-width': 'unset',
               'color': 'white'
             });
             $('.menu').css('border-color', 'white');
@@ -59,8 +60,9 @@ $(document).ready(function(){
 
           }else if (scrollTop < 200){
             $('nav').css({
-              'position': 'absolute',
+              'position': 'relative',
               'background-color': 'unset',
+                'max-width': '1440px',
               'color': nav_color
             });
             $('.menu').css('border-color', 'grey');
@@ -68,25 +70,25 @@ $(document).ready(function(){
             $('.goup').hide();
           };
         }
-         if(scrollTop + $(window).height() == $(document).height()) {
-           $('footer').css('height', '200px');
-         }else if (scrollTop > $(document).height()/2){
-           $('footer').css('height', '30px');
-         }else if ($(document).height() == $(window).height()){
-           $('footer').css('height', '200px');
-         }else{
-             $('footer').css('height', '10px');
-         };
-
+//         if(scrollTop + $(window).height() == $(document).height()) {
+//           $('footer').css('height', '200px');
+//         }else if (scrollTop > $(document).height()/2){
+//           $('footer').css('height', '30px');
+//         }else if ($(document).height() == $(window).height()){
+//           $('footer').css('height', '200px');
+//         }else{
+//             $('footer').css('height', '10px');
+//         };
+//
       });
-
-      $('footer').toggle(function(){
-        $('footer').css('height', '200px');
-        showFooter()
-      },function(){
-        hideFooter()
-        $('footer').css('height', '10px');
-      });
+//
+//      $('footer').toggle(function(){
+//        $('footer').css('height', '200px');
+//        showFooter()
+//      },function(){
+//        hideFooter()
+//        $('footer').css('height', '10px');
+//      });
 
      // navbar
      $('.main-nav-list > li').hover(function(){
