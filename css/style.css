@@ -363,7 +363,6 @@ nav ul li{
   display: inline-block;
   transition: color 0.3 ease-out;
 }
-@media screen and (min-width: 870px){
     .title-text:hover h1{
       color: #00B4FF !important;
       margin-left:10px !important;
@@ -375,7 +374,6 @@ nav ul li{
       color: #00B4FF;
       margin-left: 10px;
     }
-}
 
 /*titles content*/
 .titles-content{
