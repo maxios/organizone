@@ -83,6 +83,9 @@ nav {
     display: flex;
     height: 70px;
     top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
     margin-bottom: 40px;
     z-index: 99999;
     max-width: 1440px;

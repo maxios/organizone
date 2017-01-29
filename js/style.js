@@ -60,7 +60,7 @@ $(document).ready(function(){
 
           }else if (scrollTop < 200){
             $('nav').css({
-              'position': 'relative',
+              'position': 'absolute',
               'background-color': 'unset',
                 'max-width': '1440px',
               'color': nav_color
