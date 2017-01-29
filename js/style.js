@@ -46,7 +46,6 @@ $(document).ready(function(){
 
         $('#top-line-scroll').css('width', percentage + '%');
 
-        if ($(window).width() > 400) {
           if (scrollTop > 200){
             $('nav').css({
               'position': 'fixed',
@@ -69,7 +68,7 @@ $(document).ready(function(){
             $('.menu-icon').css('background-color', 'grey');
             $('.goup').hide();
           };
-        }
+
 //         if(scrollTop + $(window).height() == $(document).height()) {
 //           $('footer').css('height', '200px');
 //         }else if (scrollTop > $(document).height()/2){
