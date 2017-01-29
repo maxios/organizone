@@ -41,7 +41,7 @@ $(document).ready(function(){
         var percentage = (scrollTop/scrollEnd) * 100;
         var titlescroll = 100 + scrollTop;
         if (titlescroll > scrollEnd) {
-          titlescroll = scrollEnd
+          titlescroll = scrollEnd;
         };
 
         $('#top-line-scroll').css('width', percentage + '%');
@@ -60,7 +60,7 @@ $(document).ready(function(){
 
           }else if (scrollTop < 200){
             $('nav').css({
-              'position': 'relative',
+              'position': 'absolute',
               'background-color': 'unset',
                 'max-width': '1440px',
               'color': nav_color
@@ -145,7 +145,7 @@ $(document).ready(function(){
        'margin-left': '10px'
      });
 
-     $('.titles-content').css()
+     $('.titles-content').css('display', 'none');
      setTimeout(function(){
        $(id).show();
      }, 500);

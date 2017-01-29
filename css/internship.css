@@ -94,13 +94,15 @@ form{
 }
 
 .field:valid{
+    border:0;
   border-bottom: 2px solid lightgreen !important;
 }
 .field:invalid{
+    border:0;
   box-shadow:0 0 0px transparent;
 }
 .field:focus{
-
+    border:0;
   border-bottom: 2px solid orange !important;
 }
 
@@ -112,3 +114,5 @@ form{
     width: 100%;
   }
 }
+
+
