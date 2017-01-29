@@ -88,12 +88,20 @@ section {
   color: white;
   box-shadow: inset 0px 16px #444444;
   margin-top: 70px;
+    padding-bottom: 30px;
 }
 .content {
     display: table-cell;
     padding-left: 10%;
     padding-right: 10%;
     vertical-align: middle;
+}
+#finally{
+    color: white;
+    padding-top: 80px;
+    margin-bottom: -50%;
+    display: table;
+    /*text-shadow: 0 2px #999999;*/
 }
 #finally > p {
     padding-left: 10%;
@@ -165,16 +173,11 @@ section {
 }
 
 
-#finally{
-    color: white;
-    padding-top: 80px;
-    /*text-shadow: 0 2px #999999;*/
-}
 
 
 @media screen and (max-width: 1440px){
     .intro-background{
-        width: 1440px;
+        width: 1680px;
     }
 }
 @media screen and (max-width: 870px){

@@ -145,12 +145,11 @@ $(document).ready(function(){
        'margin-left': '10px'
      });
 
-     $('.titles-content').fadeOut()
+     $('.titles-content').css()
      setTimeout(function(){
-       $(id).fadeIn();
+       $(id).show();
      }, 500);
 
-     $('footer').css('height', '10px');
    });
 
 });
