@@ -145,9 +145,9 @@ $(document).ready(function(){
      });
 
      $('.titles-content').css('display', 'none');
-     setTimeout(function(){
        $(id).show();
-     }, 500);
+//     setTimeout(function(){
+//     }, 500);
 
    });
 

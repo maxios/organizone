@@ -1,1 +1,1 @@
-var nav_color = '#515151';
+var nav_color = 'white';

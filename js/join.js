@@ -1,6 +1,6 @@
 var nav_color = 'white';
  $(document).ready(function(){
-   $('section, .section-intro-content').css('height', $(window).height());
+//   $('section, .section-intro-content').css('height', $(window).height());
   //  $('.leftside, .rightside').css('height', $(window).height()/2);
   //  $('.intro-div').css('height', ($(window).height()/2) - 100);
 

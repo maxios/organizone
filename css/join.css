@@ -89,6 +89,7 @@ section {
   box-shadow: inset 0px 16px #444444;
   margin-top: 70px;
     padding-bottom: 30px;
+    display: table;
 }
 .content {
     display: table-cell;
@@ -99,7 +100,6 @@ section {
 #finally{
     color: white;
     padding-top: 80px;
-    margin-bottom: -50%;
     display: table;
     /*text-shadow: 0 2px #999999;*/
 }
@@ -194,4 +194,8 @@ section {
     .intro-background{
         width: 600px;
     }
+}
+
+.side-content {
+    display: table;
 }
