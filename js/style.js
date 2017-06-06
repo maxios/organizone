@@ -1,3 +1,4 @@
+var nav_color = '#444';
 // functions
 function prevAllCalc(selector, prev_type, initial = 0){
   var width = initial ;
